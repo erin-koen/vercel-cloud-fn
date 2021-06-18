@@ -1,4 +1,14 @@
 {
+  "description": "a template for vercel cloud function in typescript",
+  "repository": "https://github.com/erin-koen/vercel-cloud-fn",
+  "author": "eek <erin.koen@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write \"api/{*,**/*}.ts\"  && eslint --fix",
+    "lint": "yarn prettier --list-different \"api/{*,**/*}.ts\"",
+    "start": "NODE_ENV=development VERCEL_URL=localhost:3099 vercel dev --listen 3099"
+  },
   "dependencies": {},
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.27.0",
